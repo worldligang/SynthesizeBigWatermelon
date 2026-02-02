@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>合成大西瓜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-board">
+            <div class="score-item">
+                <span>当前分数:</span>
+                <span id="score">0</span>
+            </div>
+            <div class="score-item">
+                <span>最高分数:</span>
+                <span id="highScore">0</span>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div class="current-fruit">
+            <div class="fruit-label">下一个</div>
+            <div id="nextFruit" class="fruit-preview"></div>
+        </div>
+        <button id="restartBtn" class="restart-btn">重新开始</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
